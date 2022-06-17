@@ -1,0 +1,6 @@
+**/*.iml
+**/.*
+!/.gitignore
+/gradlew
+/gradlew.bat
+!/common/src/main/java/jdev/dto/Location.java
