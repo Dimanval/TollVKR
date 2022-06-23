@@ -2,10 +2,12 @@ package jdev.dto;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
+import java.io.IOException;
+
 public class Location {
     Point point;
 
-    public static void math() {
+    public static void math()  {
 
     }
 
@@ -17,7 +19,7 @@ public class Location {
         return point.getLat();
     }
 
-    public void setLat(double lat) {
+    public void setLat(int lat) throws IOException {
         point.setLat(lat);
     }
 

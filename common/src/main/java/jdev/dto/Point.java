@@ -4,6 +4,8 @@ package jdev.dto;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
+
 /**
  * Created by jdev on 06.03.2017.
  */
@@ -28,11 +30,12 @@ public class Point {
                 '}';
     }
 
+
     public double getLat() {
         return lat;
     }
 
-    public void setLat(double lat) {
+    public void setLat(int lat) throws IOException {
         this.lat = lat;
     }
 
@@ -59,5 +62,6 @@ public class Point {
     public void setTime(long time) {
         this.time = time;
     }
+
 
 }
